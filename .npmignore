@@ -1,0 +1,19 @@
+# source & configs
+src/
+tsconfig.json
+tsconfig.*.json
+
+# local tooling
+.vscode/
+.idea/
+
+# dev deps
+node_modules/
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# env
+.env
