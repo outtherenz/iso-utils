@@ -1,5 +1,5 @@
 {
-  "name": "iso-utils",
+  "name": "@stepdevs/iso-utils",
   "version": "1.0.1",
   "type": "module",
   "exports": {
