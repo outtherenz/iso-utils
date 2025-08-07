@@ -2137,4 +2137,4 @@ export const languages = [
   LanguageCode.ZH_LATN_CN,
   LanguageCode.ZU,
   LanguageCode.ZU_ZA,
-];
+] as const;

@@ -51744,4 +51744,4 @@ export const regions = [
       code: CountryCode.ZW,
     },
   },
-];
+] as const;
