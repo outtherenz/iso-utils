@@ -5,6 +5,7 @@
   "exports": {
     "./*": "./dist/*"
   },
+  "repository": "https://github.com/outtherenz/iso-utils",
   "scripts": {
     "build": "rm -rf dist || true && tsc"
   },
