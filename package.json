@@ -1,18 +1,27 @@
 {
   "name": "@stepdevs/iso-utils",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "type": "module",
-  "exports": {
-    "./*": "./dist/*"
-  },
   "repository": "https://github.com/outtherenz/iso-utils",
   "scripts": {
-    "build": "rm -rf dist || true && tsc"
+   "clean": "rm -rf dist || true",
+   "build": "npm run clean && rollup -c && tsc --emitDeclarationOnly"
   },
-  "main": "./dist/index.js",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.esm.js",
   "types": "./dist/index.d.ts",
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.8",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "rollup": "^4.50.2",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "tslib": "^2.7.0"
+  }
 }
